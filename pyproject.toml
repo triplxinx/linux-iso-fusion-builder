@@ -1,0 +1,11 @@
+[project]
+name="linux-iso-fusion-builder"
+version="0.1.0"
+requires-python=">=3.10"
+[project.scripts]
+iso-fusion="iso_fusion.cli:main"
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[tool.setuptools.packages.find]
+where=["src"]
